@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+	<title>Design Assignment</title>
+	<style>
+		*{
+			box-sizing: border-box
+		}
+		body{
+			background-color: #d8f2f2
+		}
+		input[type=text], input[type=email], input[type=submit], input[type=radio]{
+				padding: 12px;
+				border: 1px solid gray;
+				border-radius: 4px;
+				width: 47%;
+				resize: vertical;
+				cursor: pointer;
+				float: center;
+
+		}
+		input[type=email]{
+			width:105%;
+		}
+		input[type=radio]{
+			width: 47%;
+		}
+		textarea{
+			width: 60%;
+			padding: 12px;
+			border: 1px solid rgb(168, 166, 166);
+   		    border-radius: 4px;
+    		resize: vertical;
+		}
+		input[type=checkbox]{
+			width:10%;
+			padding-left:0%;
+			border:1px solid rgb(168, 166, 166);
+			border-radius:4px;
+			resize:vertical;
+
+		}
+		label{
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+		input[type=submit]{
+			background-color: darkgreen;
+			color:white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float :center;
+			width: 90%;
+		}
+		input[type=submit]:hover {
+			background-color: green;
+		}
+		textarea{
+  			width: 105%;
+            padding: 12px;
+            border: 1px solid black;
+            border-radius: 4px;
+            resize: vertical;
+            height: 20vh
+
+  		}
+		.container{
+			border: 1px solid white;
+			border-radius: 5px;
+			background-color: white;
+			margin: 150px;
+			padding-left: 30px;
+			width:600px;
+			height: 700px
+			float: center;
+		
+		}
+		.col-10{
+			float:center;
+			width:10%;
+			margin-top: 0px;
+		}
+		.col-90{
+   			 float: center;
+    		 width: 90%;
+             margin-top: 0px;
+  		}
+  		
+  		button{
+  			width: 95%;
+  			background-color: darkgreen;
+  			border-radius: 6px;
+  		}
+  		#spread{
+  			width: 90%;
+  		}
+  		#radio{
+  			border: 1px solid black
+  			padding-left:;
+  		}
+  		#unique{
+  			margin-left: 180px
+  		}
+		
+		label{
+			font-size: 10px
+			padding-bottom: 1px;
+		}
+	</style>
+</head>
+ <body>
+
+ 	<div class="container">
+ 		<h1>Contact Us</h1>
+ 		<div class="row">
+ 			<div><Span class="col-10">
+ 				<label for="First Name"> First Name:*</label>
+
+ 				<span id="unique"><label for="Last Name"> Last Name:*</label></span>
+
+ 			</Span></div>
+ 			<Span class="col-90">
+ 				<input type="text" id="First name" name="First name" required>
+ 				<input type="text" id="Last name" name="Last name" required>
+
+ 			</Span>
+ 		
+ 			
+ 		</div>
+ 		
+ 		<div class="row">
+ 			<span class="col-10">
+ 				<label for="email">Email address:</label>
+ 			</span>
+ 			<div class="col-90"><span id="spread">
+ 				<input type="Email" id="email" name="Email" required ></span>
+ 			</div>
+ 			
+ 		</div>
+ 		<div class="row">
+ 			<Span class="col-10">
+ 				<label for="Query type"> Query Type:</label>
+ 			</span>
+ 			<div class="col-90">
+ 				<span style="border: 1px solid black"><input type="radio" id="Query" name="Query" value="General enquiry" placeholder="General enquiry">General enquiry </span>
+ 				<span style="border: 1px solid black"; float: lang=""><input type="radio" id="Query" name="Query" value="Support request" placeholder="Support Request">Support Request</span>
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="col-10">
+ 				<label for="Message"> Message:</label>
+ 			</div>
+ 			<div class="col-90">
+ 				<textarea name="message" id="Message" cols="30" rows="10" required=""></textarea> 
+ 			</div>
+ 		</div>
+
+ 		<div id="checkbox">
+ 			
+ 			<input type="checkbox" name="check" required="">
+ 			<label>I consent to being contacted by the team</label>
+ 			
+ 		</div>
+ 		<div class="row">
+ 			<button><input type="submit" name="submit" >
+ 				
+ 				</input>	</button>
+ 			
+ 		</div>
+
+ 	</div>
+ </div>
+
+
+ </body>
+
+
+</html>
